@@ -9,15 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="h">
         <div id="encabezado">
             <h1 id = "titulo">
                 Título
             </h1>
         </div>
     </header>
-    <div id="bloqueCod">
-    <textarea name="codigo" id="codigo" cols="85" rows="85">
+
+    <div class="caja">
+        <div id="bloqueCod">
+    <textarea name="codigo" id="codigo" cols="85" rows="50">
 
     //Se imprime el encabezado
     imprimir("Tablas de" & " multiplicar");
@@ -98,13 +100,22 @@
         imprimir("a es menor o igual que 10.");
     }      
     </textarea>
+        <input type="submit" value="Enviar">
     </div>
 
     <div id="informacion">
         <h1>
             Información del lenguaje
         </h1>
+
+        <ul id="listap">
+            <li>Variables</li>
+            <li>Condicionales</li>
+            <li>Ciclos</li>
+            <li>Comentarios</li>
+        </ul>
     </div>
+</div>
     
 </body>
 </html>
