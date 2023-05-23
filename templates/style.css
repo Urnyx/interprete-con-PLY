@@ -1,0 +1,27 @@
+#encabezado{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+#titulo{
+    background-color: antiquewhite;
+    font-size: 42px;
+    padding: 30px;
+}
+
+#codigo{
+    background-color: black; 
+    color: white;
+    margin: 30px;
+    display: inline-block;
+}
+
+#bloqueCod{
+    display: inline-block;
+}
+
+#informacion{
+    display: inline-block;
+    vertical-align: top;
+}
