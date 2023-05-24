@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Interprete</title>
 </head>
 <body>
     <header id="h">
         <div id="encabezado">
             <h1 id = "titulo">
-                Título
+                Interprete
             </h1>
         </div>
     </header>
@@ -20,7 +20,7 @@
     <div class="caja">
         <div id="bloqueCod">
 
-            <form method="POST" action="/guardar-contenido">
+    <form method="POST" action="/guardar-contenido">
 
     <textarea name="codigo" id="codigo" cols="85" rows="50">
 
@@ -104,7 +104,7 @@
     }
     
     </textarea>
-        <button type="button" onclick="enviarContenido()">procesar</button>
+    <button type="button" onclick="enviarContenido()">procesar</button>
     </form>
     </div>
 
@@ -122,6 +122,6 @@
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
