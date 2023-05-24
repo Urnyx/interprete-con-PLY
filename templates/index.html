@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Document</title>
 </head>
 <body>
@@ -19,6 +19,9 @@
 
     <div class="caja">
         <div id="bloqueCod">
+
+            <form method="POST" action="/guardar-contenido">
+
     <textarea name="codigo" id="codigo" cols="85" rows="50">
 
     //Se imprime el encabezado
@@ -98,9 +101,11 @@
     }
     }sino{
         imprimir("a es menor o igual que 10.");
-    }      
+    }
+    
     </textarea>
-        <input type="submit" value="Enviar">
+        <button type="button" onclick="enviarContenido()">procesar</button>
+    </form>
     </div>
 
     <div id="informacion">
@@ -116,6 +121,7 @@
         </ul>
     </div>
 </div>
-    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 </html>
